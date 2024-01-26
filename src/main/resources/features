@@ -1,0 +1,25 @@
+# entrata.feature
+
+Feature: Entrata Careers Page Functionality
+
+  Scenario: Verify Careers Page Title
+    Given I open the entrata careers website
+    Then the title should be "Entrata - Careers"
+
+  Scenario: Navigate to Job Openings
+    Given I open the entrata careers website
+    When I navigate to the Job Openings page
+    Then the title should be "Entrata - Job Openings"
+ Scenario: Verify Homepage Title
+    Given I open the entrata website
+    Then the title should be "Entrata - Your Home, Our Passion"
+
+  Scenario: Navigate to Features Page
+    Given I open the entrata website
+    When I navigate to the Features page
+    Then the title should be "Entrata - Features"
+
+  Scenario: Fill Contact Form
+    Given I open the entrata website
+    When I fill out the contact form
+    Then a success message should be displayed
